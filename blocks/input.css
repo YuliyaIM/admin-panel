@@ -50,6 +50,7 @@ border: 0.0625rem solid var(--background-borderitem);
 box-sizing: border-box;
 border-radius: 0.25rem;
 width: 100%;
+padding-right: 3rem;
 }
 
 .input__item_error{
