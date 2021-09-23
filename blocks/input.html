@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>input-форма</title>
+   <link rel="stylesheet" href="./input.css">
+   <link rel="stylesheet" href="../../reset.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https: //fonts.googleapis.com/css2? family = Ubuntu & display = swap ">
+
+
+</head>
+
+<body>
+   <form action="#" method="post" enctype="multipart/form-data">
+
+      <div class="container">
+         <div class="inputwrapper">
+
+            <div class="input">
+               <label class="input__lable">Дата и время заказа</label>
+               <input class="input__item" type="text" name="DataTime" value="" placeholder="Введите" />
+            </div>
+         </div>
+
+         <div class="input">
+            <label class="input__lable">Дата и время заказа</label>
+            <div class="wrapper">
+               <input class="input__item input__item_error" type="text" name="DataTime" value=""
+                  placeholder="Введите" />
+
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000" viewBox="0 0 16 16"
+                  class="svgerror">
+                  <path fill="none" d="M 12.5 3.5 L 3.5 12.5 M 3.5 3.5 L 12.5 12.5" />
+               </svg>
+            </div>
+         </div>
+         <div class="input">
+
+            <label class="input__lable">Дата и время заказа</label>
+            <div class="wrapper">
+               <input class="input__item input__item_locked" type="text" name="DataTime" value=""
+                  placeholder="Введите" />
+               <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="none" viewBox="0 0 16 16"
+                  class="svglocked">
+                  <path clip-rule="evenodd" fill-rule="evenodd" stroke="none"
+                     d="M 4 5 C 4 2.79086 5.79086 1 8 1 C 10.2091 1 12 2.79086 12 5 V 7 C 13.1046 7 14 7.89543 14 9 V 13 C 14 14.1046 13.1046 15 12 15 H 4 C 2.89543 15 2 14.1046 2 13 V 9 C 2 7.89543 2.89543 7 4 7 V 5 Z M 10 5 V 7 H 6 V 5 C 6 3.89543 6.89543 3 8 3 C 9.10457 3 10 3.89543 10 5 Z" />
+                  <path stroke="none"
+                     d="M 12 5 C 12 2.8 10.2 1 8 1 C 5.8 1 4 2.8 4 5 L 4 9 H 6 V 5 C 6 3.75 7 3 8 3 C 9 3 10 3.75 10 5 V 9 H 12 V 5 Z" />
+               </svg>
+            </div>
+         </div>
+      </div>
+   </form>
+</body>
+
+</html>

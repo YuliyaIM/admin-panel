@@ -1,0 +1,78 @@
+:root{
+   --background-lite: #A8A8FF;
+   --background-middle: #8055FF;
+   --background-borderitem:#459DF5;
+   --background-bordererror:#F53152;
+   --backgroundlocked:#BAD8F5;
+}
+
+body, html{
+font-family: 'Ubuntu', sans-serif;
+font-size: 16px;
+   }
+
+.container{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0.5rem 0;
+width: 16rem;
+border: 0.0625rem dashed var(--background-middle);
+padding: 3rem;
+width: 22rem;
+height: 25rem;
+}
+
+.input{
+width: 16rem;
+
+}
+.wrapper{
+   display: flex;
+   flex-direction: row;
+
+}
+
+.input__lable{
+   font-family: 'Ubuntu';
+   font-size: 0.8125rem;
+   height: 1rem;
+
+}
+
+.input__item{
+   display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0.5rem;
+border: 0.0625rem solid var(--background-borderitem);
+box-sizing: border-box;
+border-radius: 0.25rem;
+width: 100%;
+}
+
+.input__item_error{
+   position: relative;
+   border: 0.0625rem solid var(--background-bordererror);
+  
+}
+.svgerror{
+   position: absolute;
+   margin: 0.8rem 14rem;
+   height: 1rem;
+   width: 1rem;
+}
+.input__item_locked{
+   position: relative;
+   background: var(--backgroundlocked);
+   
+}
+.svglocked{
+   position: absolute;
+   margin: 0.8rem 14rem;
+   height: 1rem;
+   width: 1rem;
+   
+   
+}
