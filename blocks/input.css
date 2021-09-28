@@ -44,7 +44,6 @@ body, html{
 
 .input__item{
    display: flex;
-   flex-direction: row;
    align-items: center;
    padding: 0.5rem;
    border: 0.0625rem solid var(--background-border-item);
