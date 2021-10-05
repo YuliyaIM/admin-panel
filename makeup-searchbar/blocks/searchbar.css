@@ -1,9 +1,9 @@
 :root{
    --background-lite: #A8A8FF;
    --background-middle: #8055FF;
-   --background-border-item:#459DF5;
-   --background-border-error:#F53152;
-   --background-locked:#BAD8F5;
+   --background-border-item: #459DF5;
+   --background-border-error: #F53152;
+   --background-locked: #BAD8F5;
 }
 body, html{
    font-family: 'Ubuntu', sans-serif;
@@ -55,14 +55,8 @@ body, html{
    padding: 0;
 }
 .buttom__img{
-   /* margin-left: 14.5rem; */
-   /* position: absolute; */
    height: inherit;
    width: inherit;
-   /* margin: -0.5rem; */
-
-   /* z-index: 15; */
-   /* margin: 0.5rem; */
 }
 .searchbar__item_close {
    padding-right: 2rem;
