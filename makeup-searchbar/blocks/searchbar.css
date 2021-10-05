@@ -1,0 +1,63 @@
+:root{
+   --background-lite: #A8A8FF;
+   --background-middle: #8055FF;
+   --background-border-item: #459DF5;
+   --background-border-error: #F53152;
+   --background-locked: #BAD8F5;
+}
+body, html{
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 16px;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   border: 0.0625rem dashed var(--background-middle);
+   width: 22rem;
+   height: 12rem;
+   padding: 3rem; 
+}
+.searchbar{
+   display: flex;
+   padding-bottom: 2rem; 
+}
+.searchbar__item{
+   position: relative;
+   border: 0.0625rem solid var(--background-border-item);
+   box-sizing: border-box;
+   border-radius: 0.25rem;
+   padding:0.5rem 0.25rem 0.5rem 2rem;
+   width: 16rem;
+   height: 2rem;
+   outline: none;
+}
+.searchbar__item::placeholder{ 
+   color: var(--background-locked);
+}
+.searchbar__img{
+   position: absolute;
+   height: 1rem;
+   width: 1rem;
+   z-index: 10;
+   margin: 0.5rem;
+}
+.buttom{
+   position: absolute;
+   height: 1rem;
+   width: 1rem;
+   z-index: 10;
+   margin: 0.5rem;
+   margin-left: 14.5rem;
+   appearance: none;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   padding: 0;
+}
+.buttom__img{
+   height: inherit;
+   width: inherit;
+}
+.searchbar__item_close {
+   padding-right: 2rem;
+}
