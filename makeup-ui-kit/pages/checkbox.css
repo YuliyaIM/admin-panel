@@ -1,0 +1,52 @@
+:root {
+   --background-lite: #A8A8FF;
+   --background-middle: #8055FF;
+   --background-borderitem: #459DF5;
+   --background-locked: #BAD8F5;
+   --background-main: #E5E5E5;
+   --background-item: #FFF;
+}
+body, html {
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 16px;
+}
+.checkbox-wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 0.0625rem dashed var(--background-middle);
+   border-radius: 0.375rem;
+   height: 4rem;
+   width: 6.5rem;
+   background-color: var(--background-main);
+}
+.chechbox__items {
+   position: relative; 
+   margin: 1.5rem;
+   height: 1rem;
+   width: 1rem;
+}
+.chechbox__items_active {
+   margin-left: 0.25rem;
+}
+.checkbox__input {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   height: 1rem;
+   width: 1rem;
+   appearance: none;
+   border: 0.0625rem solid var(--background-locked);
+   box-sizing: border-box;
+   border-radius: 0.125rem;
+   background-color: var(--background-item);
+   cursor: pointer;
+}
+.checkbox__img {
+   height: 1rem;
+   width: 1rem;
+   position: absolute;
+   border-radius: 0.125rem;
+   background-color: var(--background-borderitem);
+   z-index: 10;
+}
