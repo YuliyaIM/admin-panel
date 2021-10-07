@@ -28,6 +28,7 @@ body, html {
 }
 .chechbox__items_active {
    margin-left: 0.25rem;
+   cursor: pointer;
 }
 .checkbox__input {
    position: absolute;
