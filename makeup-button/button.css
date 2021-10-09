@@ -30,7 +30,7 @@ body, html {
 .button-wrapper__main {
    margin-right: 3rem;
 }
-.button-wrapper__disable {
+.button-wrapper__secondary {
    margin-right: 3rem;
 }
 .button {
@@ -43,7 +43,11 @@ body, html {
    border:none;
    font-size: 0.75rem;
    line-height: 1rem;
-   color: var(--background-text); 
+   color: var(--background-text);
+   cursor: pointer;
+}
+.button:hover {
+   background-color: var(--background-border);
 }
 .button__text {
    width: 5.5rem;
@@ -56,6 +60,10 @@ body, html {
    line-height: 1rem;
    color: var(--background-text);
    margin: 1rem 0;
+   cursor: pointer;
+}
+.button__text:hover {
+   background-color: var(--background-border);
 }
 .button__icon {
    width: 2rem;
@@ -64,18 +72,28 @@ body, html {
    border-radius: 0.25rem;
    border:none;
    color: var(--background-text);
+   cursor: pointer;
 }
-.button_disable {
+.button__icon:hover {
+   background-color: var(--background-border);
+}
+.button_secondary {
    appearance: none;
    background-color: transparent;
    color: var(--background-buttun);
 }
-.button__text_disable {
+.button_secondary:hover {
+   color: var(--background-text);
+}
+.button__text_secondary {
    appearance: none;
    background-color: transparent;
-   color: var(--background-buttun);  
+   color: var(--background-buttun);
 }
-.button__icon_disable {
+.button__text_secondary:hover{
+   color: var(--background-text);
+}
+.button__icon_secondary {
    appearance: none;
    background-color: transparent;
    color: var(--background-buttun);
@@ -96,20 +114,28 @@ body, html {
    width: 1.5rem;
    height: 1.5rem;
 }
-.button_small-disable {
+.button_small-secondary {
    appearance: none;
    background-color: transparent;
    color: var(--background-buttun);
    width: 5.75rem;
    height: 1.5rem;
-   padding: 0.25rem 0.5rem 0.25rem 1.5rem;  
+   padding: 0.25rem 0.5rem 0.25rem 1.5rem; 
+   
 }
-.button__text_small-disable {
+.button_small-secondary:hover {
+   color: var(--background-text);
+}
+.button__text_small-secondary {
    appearance: none;
    background-color: transparent;
-   color: var(--background-buttun);  
+   color: var(--background-buttun);
+  
 }
-.button__icon_small-disable {
+.button__text_small-secondary:hover {
+   color: var(--background-text);
+}
+.button__icon_small-secondary {
    appearance: none;
    background-color: transparent;
    color: var(--background-buttun);
@@ -117,28 +143,29 @@ body, html {
    width: 1.5rem;
    height: 1.5rem;  
 }
-.button_secondary {
+.button_disable {
    appearance: none;
    background-color: transparent;
    width: 10rem;
    height: 2rem;
    color: var(--color-second);
-   padding: 0.5rem 1rem 0.5rem 2.5rem;
+   padding: 0.5rem 1rem 0.5rem 2.5rem; 
 }
-.button__text_secondary {
+.button__text_disable {
    appearance: none;
    background-color: transparent;
    width: 10rem;
    height: 2rem;
    color: var(--color-second);
 }
+   
 .wrapper {
    width: 7rem;
    height: 2rem;
    display: flex;
    justify-content: flex-start;
 }
-.wrapper_secondary {
+.wrapper_disable {
    width: 10rem;
    height: 2rem;
 }
@@ -165,6 +192,9 @@ body, html {
 .img_icon-small {
    margin: 0.25rem;
 }
-.img_secondary {
+/* .img_icon-small:hover{
+   fill: var(--background-text); */
+}
+.img_disable {
    margin: 0.5rem 0 0.5rem 1.125rem;
 }
