@@ -121,7 +121,6 @@ body, html {
    width: 5.75rem;
    height: 1.5rem;
    padding: 0.25rem 0.5rem 0.25rem 1.5rem; 
-   
 }
 .button_small-secondary:hover {
    color: var(--background-text);
@@ -130,7 +129,6 @@ body, html {
    appearance: none;
    background-color: transparent;
    color: var(--background-buttun);
-  
 }
 .button__text_small-secondary:hover {
    color: var(--background-text);
@@ -191,9 +189,6 @@ body, html {
 }
 .img_icon-small {
    margin: 0.25rem;
-}
-/* .img_icon-small:hover{
-   fill: var(--background-text); */
 }
 .img_disable {
    margin: 0.5rem 0 0.5rem 1.125rem;
