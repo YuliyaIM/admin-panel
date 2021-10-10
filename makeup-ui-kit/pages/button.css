@@ -1,7 +1,7 @@
 :root {
    --background-main: #E5E5E5;
    --background-border: #8055FF;
-   --background-buttun: #459DF5;
+   --background-button: #459DF5;
    --background-text: #FFFFFF;
    --color-second: #000000;
 }
@@ -16,7 +16,7 @@ body, html {
    width: 36rem;
    height: 23.5rem;
    background: var(--background-main);
-   border: 1px dashed var(--background-border);
+   border: 0.0625rem dashed var(--background-border);
    box-sizing: border-box;
    border-radius: 0.125rem;
 }
@@ -28,16 +28,24 @@ body, html {
    margin-top: 0;
 }
 .button-wrapper__main {
+   display: flex;
+   flex-direction: column;
    margin-right: 3rem;
 }
 .button-wrapper__secondary {
+   display: flex;
+   flex-direction: column;
    margin-right: 3rem;
+}
+.button-wrapper__disable{
+   display: flex;
+   flex-direction: column;
 }
 .button-ui {
    position: relative;
    width: 7rem;
    height: 2rem;
-   background: var(--background-buttun);
+   background: var(--background-button);
    border-radius: 0.25rem;
    padding: 0.5rem 1rem 0.5rem 2.5rem;
    border:none;
@@ -52,7 +60,7 @@ body, html {
 .button-ui__text {
    width: 5.5rem;
    height: 2rem;
-   background: var(--background-buttun);
+   background: var(--background-button);
    border-radius: 0.25rem;
    padding: 0.5rem 1rem;
    border:none;
@@ -66,9 +74,10 @@ body, html {
    background-color: var(--background-border);
 }
 .button-ui__icon {
+   position: relative;
    width: 2rem;
    height: 2rem;
-   background: var(--background-buttun);
+   background: var(--background-button);
    border-radius: 0.25rem;
    border:none;
    color: var(--background-text);
@@ -80,7 +89,7 @@ body, html {
 .button-ui_secondary {
    appearance: none;
    background-color: transparent;
-   color: var(--background-buttun);
+   color: var(--background-button);
 }
 .button-ui_secondary:hover {
    color: var(--background-text);
@@ -88,7 +97,7 @@ body, html {
 .button-ui__text_secondary {
    appearance: none;
    background-color: transparent;
-   color: var(--background-buttun);
+   color: var(--background-button);
 }
 .button-ui__text_secondary:hover{
    color: var(--background-text);
@@ -96,7 +105,7 @@ body, html {
 .button-ui__icon_secondary {
    appearance: none;
    background-color: transparent;
-   color: var(--background-buttun);
+   color: var(--background-button);
    width: 2rem;
    height: 2rem;
 }
@@ -117,7 +126,7 @@ body, html {
 .button-ui_small-secondary {
    appearance: none;
    background-color: transparent;
-   color: var(--background-buttun);
+   color: var(--background-button);
    width: 5.75rem;
    height: 1.5rem;
    padding: 0.25rem 0.5rem 0.25rem 1.5rem; 
@@ -128,7 +137,10 @@ body, html {
 .button-ui__text_small-secondary {
    appearance: none;
    background-color: transparent;
-   color: var(--background-buttun);
+   color: var(--background-button);
+   width: 5.75rem;
+   height: 1.5rem;
+   padding: 0.25rem 0.5rem;
 }
 .button-ui__text_small-secondary:hover {
    color: var(--background-text);
@@ -136,7 +148,7 @@ body, html {
 .button-ui__icon_small-secondary {
    appearance: none;
    background-color: transparent;
-   color: var(--background-buttun);
+   color: var(--background-button);
    padding: 0;
    width: 1.5rem;
    height: 1.5rem;  
@@ -156,32 +168,15 @@ body, html {
    height: 2rem;
    color: var(--color-second);
 }
-   
-.wrapper-img-button {
-   width: 7rem;
-   height: 2rem;
-   display: flex;
-   justify-content: flex-start;
-}
-.wrapper-img-button_disable {
-   width: 10rem;
-   height: 2rem;
-}
-.wrapper-img-button_small {
-   width: 5.75rem;
-   height: 1.5rem;
-}
-.wrapper-img-button_icon-small {
-   width: 1.5rem;
-   height: 1.5rem;
-}
 .img {
    position: absolute; 
+   top: 0;
+   left: 0;
    width: 1rem;
    height: 1rem;
    margin: 0.5rem 0.75rem;
 }
-.img-small {
+.img_small {
    margin: 0.25rem 0.5rem;
 }
 .img_icon {
