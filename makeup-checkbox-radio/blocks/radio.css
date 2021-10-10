@@ -1,5 +1,4 @@
 :root {
-   --background-lite: #A8A8FF;
    --background-middle: #8055FF;
    --background-borderitem: #459DF5;
    --background-locked: #BAD8F5;
@@ -13,32 +12,44 @@ body, html {
 .radio-wrapper {
    display: flex;
    align-items: center;
+   justify-content: center;
    border: 0.0625rem dashed var(--background-middle);
    border-radius: 0.375rem;
    height: 4rem;
    width: 6.5rem;
    background-color: var(--background-main);
 }
- .radio__items {
-   height: 4rem;
-   width: 6.5rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.custom-radio input[type="radio"] {
+   position: absolute;
+   opacity: 0; 
 }
-.radio__input {
-   margin: 1.5rem 0.75rem;
-   height: 1rem;
-   width: 1rem;
-   appearance: none;
-   border: 0.0625rem solid var(--background-locked);
-   box-sizing: border-box;
-   border-radius: 1rem;
-   background-color: var(--background-item);
+.custom-radio span {
+   position: relative;
+   display: flex;
+   align-items: center;
+   margin: 0 0.75rem; 
    cursor: pointer;
 }
-.radio__input_active {
-   border: 0.25rem solid var(--background-borderitem);
+.custom-radio span::before{
+   content: "";
+   display: flex;
+   width: 1rem;
+   height: 1rem;
+   border: 0.0625 solid var(--background-locked);
    box-sizing: border-box;
-   border-radius: 0.5rem;
+   border-radius: 1rem;
+   background: var(--background-item);
 }
+.custom-radio span::after{
+   content: "";
+   position: absolute;
+   width: 0.5rem;
+   height: 0.5rem;
+   border: 0.25rem solid var(--background-borderitem);
+   border-radius: 100%;
+   opacity: 0;
+}
+.custom-radio input[type="radio"]:checked + span::after{
+   opacity:1;
+}
+ 
