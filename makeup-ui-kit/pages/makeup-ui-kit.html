@@ -275,13 +275,16 @@
          <label class="checkbox__lable">
             <div class="chechbox__items">
                <input class="checkbox__input" type="checkbox">
+               <svg class="checkbox__img" viewBox="0 0 16 16" fill="#FFF" stroke="none">
+                  <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
+               </svg>
             </div>
          </label>
       </div>
       <div class="checkbox">
          <label class="checkbox__lable">
-            <div class="chechbox__items chechbox__items_active">
-               <input class="checkbox__input checkbox__input_active" type="checkbox" checked>
+            <div class="chechbox__items">
+               <input class="checkbox__input" type="checkbox" checked>
                <svg class="checkbox__img" viewBox="0 0 16 16" fill="#FFF" stroke="none">
                   <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                </svg>
@@ -291,13 +294,14 @@
    </div>
    <!--конец часть4-->
    <div class="radio-wrapper">
-      <div class="radio">
-         <div class="radio__items">
-            <input class="radio__input" type="radio">
-            <input class="radio__input radio__input_active" type="radio" checked>
-         </div>
-      </div>
-   </div>
+      <label class="custom-radio">
+         <input class="radio__input" type="radio" name="radio">
+         <span></span>
+      </label>
+      <label class="custom-radio">
+         <input class="radio__input" type="radio" name="radio" checked>
+         <span></span>
+      </label>
    </div>
    <!--конец 5 часть-->
    <div class="container-button">
