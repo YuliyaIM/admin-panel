@@ -11,6 +11,7 @@
    <link rel="stylesheet" href="./checkbox.css">
    <link rel="stylesheet" href="./radio.css">
    <link rel="stylesheet" href="./button.css">
+   <link rel="stylesheet" href="./dropdowns.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https: //fonts.googleapis.com/css2? family = Ubuntu & display = swap " rel=" stylesheet ">
@@ -201,9 +202,10 @@
          </div>
       </div>
    </div>
+   </br>
    <!--конец 1 часть-->
    <form action="#" method="post" enctype="multipart/form-data">
-      <div class="container">
+      <div class="container-input">
          <div class="input-wrapper">
             <div class="input">
                <label class="input__lable" for="lable-date-time">Дата и время заказа</label>
@@ -241,7 +243,8 @@
          </div>
       </div>
    </form>
-   <!--rjytw 2 часть-->
+   </br>
+   <!--конец 2 часть-->
    <form action="#" method="post" enctype="multipart/form-data">
       <div class="container__searchbar">
          <div class="searchbar">
@@ -269,6 +272,7 @@
          </div>
       </div>
    </form>
+   </br>
    <!--конец 3 часть-->
    <div class="checkbox-wrapper">
       <div class="checkbox">
@@ -292,6 +296,7 @@
          </label>
       </div>
    </div>
+   </br>
    <!--конец часть4-->
    <div class="radio-wrapper">
       <label class="custom-radio">
@@ -303,6 +308,7 @@
          <span></span>
       </label>
    </div>
+   </br>
    <!--конец 5 часть-->
    <div class="container-button">
       <div class="button-wrapper">
@@ -377,7 +383,160 @@
          </div>
       </div>
    </div>
+   </br>
    <!--канец-часть 6-->
+   <div class="container-dropdown">
+      <div class="dropdown">
+         <div class="dropdown__up">
+            <form class="dropdown__item" action="#" method="POST">
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__checkbox-input" type="checkbox">
+                     <svg class="dropdown__checkbox-img" viewBox="0 0 16 16" fill="#FFF" stroke="none">
+                        <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
+                     </svg>
+                     <span class="dropdown__title">Новый</span>
+                  </div>
+               </label>
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__checkbox-input" type="checkbox">
+                     <svg class="dropdown__checkbox-img" viewBox="0 0 16 16" fill="#FFF" stroke="none">
+                        <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
+                     </svg>
+                     <span class="dropdown__title">Рассчет</span>
+                  </div>
+               </label>
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__checkbox-input" type="checkbox">
+                     <svg class="dropdown__checkbox-img" viewBox="0 0 16 16" fill="#FFF" stroke="none">
+                        <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
+                     </svg>
+                     <span class="dropdown__title">Подтвержден</span>
+                  </div>
+               </label>
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__checkbox-input" type="checkbox">
+                     <svg class="dropdown__checkbox-img" viewBox="0 0 16 16" fill="#FFF" stroke="none">
+                        <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
+                     </svg>
+                     <span class="dropdown__title">Отложен</span>
+                  </div>
+               </label>
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__checkbox-input" type="checkbox">
+                     <svg class="dropdown__checkbox-img" viewBox="0 0 16 16" fill="#FFF" stroke="none">
+                        <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
+                     </svg>
+                     <span class="dropdown__title">Выполнен</span>
+                  </div>
+               </label>
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__checkbox-input" type="checkbox">
+                     <svg class="dropdown__checkbox-img" viewBox="0 0 16 16" fill="#FFF" stroke="none">
+                        <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
+                     </svg>
+                     <span class="dropdown__title">Отменен</span>
+                  </div>
+               </label>
+            </form>
+            <form class="dropdown__item" action="#" method="POST">
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__radio-input" type="radio" name="radio" value="new">
+                     <span class="dropdown__title">Новый</span>
+                  </div>
+               </label>
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__radio-input" type="radio" name="radio" value="payment">
+                     <span class="dropdown__title">Рассчет</span>
+                  </div>
+               </label>
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__radio-input" type="radio" name="radio" value="confirmed">
+                     <span class="dropdown__title">Подтвержден</span>
+                  </div>
+               </label>
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__radio-input" type="radio" name="radio" value="postponed">
+                     <span class="dropdown__title">Отложен</span>
+                  </div>
+               </label>
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__radio-input" type="radio" name="radio" value="completed">
+                     <span class="dropdown__title">Выполнен</span>
+                  </div>
+               </label>
+               <label class="dropdown__lable">
+                  <div class="dropdown__wrapper">
+                     <input class="dropdown__radio-input" type="radio" name="radio" value="canceled">
+                     <span class="dropdown__title">Отменен</span>
+                  </div>
+               </label>
+            </form>
+         </div>
+         <div class="dropdown__down">
+            <form class="dropdown__item dropdown__item_small">
+               <label class="dropdown__lable">
+                  <div class="dropdown__block">
+                     <span class="dropdown__title">Номер страницы</span>
+                     <input class="dropdown__title dropdown__title_another" type=" text" name="page"
+                        placeholder="Введите номер">
+                  </div>
+               </label>
+            </form>
+            <form class="dropdown__item dropdown__item_large">
+               <div class="dropdown__block">
+                  <span class="dropdown__title">Удалить n записей?</span>
+                  <button class="dropdown__button dropdown__button_transparent">
+                     <span class="dropdown__title dropdown__title_light">Удалить</span>
+                  </button>
+                  <button class="dropdown__button">
+                     <span class="dropdown__title dropdown__title_dark">Отмена</span>
+                  </button>
+               </div>
+            </form>
+            <form class="dropdown__item dropdown__item_large">
+               <div class="dropdown__block">
+                  <span class="dropdown__title">Выберете тему</span>
+                  <button class="dropdown__button dropdown__button_transparent">
+                     <svg class="dropdown__button-img" xmlns="http://www.w3.org/2000/svg" fill="#459DF5"
+                        viewBox="0 0 16 16" strok="none">
+                        <circle stroke="none" cx="8" cy="8" r="4" />
+                        <path stroke="none" d="M 15 9 L 16 8 L 15 7 H 13 V 9 H 15 Z" />
+                        <path stroke="none" d="M 1 9 L 0 8 L 1 7 H 3 V 9 H 1 Z" />
+                        <path stroke="none" d="M 7 15 L 8 16 L 9 15 V 13 H 7 V 15 Z" />
+                        <path stroke="none" d="M 7 1 L 8 0 L 9 1 V 3 H 7 V 1 Z" />
+                        <path stroke="none" d="M 12.5 14 H 14 L 14 12.5 L 12.5 11 L 11 12.5 L 12.5 14 Z" />
+                        <path stroke="none" d="M 2 3.5 L 2 2 L 3.5 2 L 5 3.5 L 3.5 5 L 2 3.5 Z" />
+                        <path stroke="none" d="M 3.5 14 H 2 L 2 12.5 L 3.5 11 L 5 12.5 L 3.5 14 Z" />
+                        <path stroke="none" d="M 14 3.5 V 2 L 12.5 2 L 11 3.5 L 12.5 5 L 14 3.5 Z" />
+                     </svg>
+                     <span class="dropdown__title dropdown__title_light">Светлая</span>
+                  </button>
+                  <button class="dropdown__button">
+                     <svg class="dropdown__button-img" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" stroke="none"
+                        viewBox="0 0 16 16">
+                        <path stroke="none"
+                           d="M 8 15 C 12.0269 15 15.5 11.5021 15 7.5 C 14.7688 10.0468 12.6071 12 10 12 C 7.23858 12 5 9.76142 5 7 C 5 4.23858 7.23858 2 10 2 C 11 2 12 2.5 12 2.5 C 11 1.5 10 1 8 1 C 4.13401 1 1 4.13401 1 8 C 1 11.866 4.13401 15 8 15 Z" />
+                     </svg>
+                     <span class="dropdown__title dropdown__title_dark">Темная</span>
+                  </button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   </br>
+   <!--конец 7 часть-->
 </body>
 
 </html>
