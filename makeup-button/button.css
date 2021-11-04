@@ -1,0 +1,148 @@
+:root {
+   --background-main: #E5E5E5;
+   --background-border: #8055FF;
+   --background-button: #459DF5;
+   --background-text: #FFFFFF;
+   --color-second: #000000;
+}
+body, html {
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 16px;
+}
+.container-button {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 36rem;
+   height: 23.5rem;
+   background: var(--background-main);
+   border: 0.0625rem dashed var(--background-border);
+   box-sizing: border-box;
+   border-radius: 0.125rem;
+}
+.button-wrapper {
+   display: flex;
+   margin: 3rem;
+}
+.button-wrapper:last-child {
+   margin-top: 0;
+}
+.button-wrapper__main {
+   display: flex;
+   flex-direction: column;
+   margin-right: 3rem;
+}
+.button-wrapper__secondary {
+   display: flex;
+   flex-direction: column;
+   margin-right: 3rem;
+}
+.button-wrapper__disabled {
+   display: flex;
+   flex-direction: column;
+}
+.button {
+   position: relative;
+   width: 7rem;
+   height: 2rem;
+   background: var(--background-button);
+   border-radius: 0.25rem;
+   padding: 0.5rem 1rem 0.5rem 2.5rem;
+   border:none;
+   line-height: 1rem;
+   color: var(--background-text);
+   cursor: pointer;
+}
+.button:hover {
+   background-color: var(--background-border);
+}
+.button_regular {
+   width: 5.5rem;
+   height: 2rem;
+   background: var(--background-button);
+   border-radius: 0.25rem;
+   padding: 0.5rem 1rem;
+   border:none;
+   line-height: 1rem;
+   color: var(--background-text);
+   margin: 1rem 0;
+   cursor: pointer;
+}
+.button__text {
+   font-size: 0.8125rem;
+}
+.button__text_disabled {
+display: flex;   
+justify-content: start;
+}
+.button__text_disabled.button__text_regular {
+   padding-left: 1rem;
+}
+.button__icon {
+   position: relative;
+   width: 2rem;
+   height: 2rem;
+   background: var(--background-button);
+   border-radius: 0.25rem;
+   border:none;
+   color: var(--background-text);
+   cursor: pointer;
+}
+.button__icon:hover {
+   background-color: var(--background-border);
+}
+.button_secondary {
+   appearance: none;
+   background-color: transparent;
+   color: var(--background-button);
+}
+.button__icon_secondary {
+   appearance: none;
+   background-color: transparent;
+   color: var(--background-button);
+   width: 2rem;
+   height: 2rem;
+}
+.button_small {
+   width: 5.75rem;
+   height: 1.5rem;
+   padding: 0.25rem 0.5rem 0.25rem 1.5rem;
+}
+.button_regular.button_small {
+   width: 4.5rem;
+   height: 1.5rem;
+   padding: 0.25rem 0.5rem;
+}
+.button__icon_small {
+   width: 1.5rem;
+   height: 1.5rem;
+}
+.button_disabled {
+   background-color: transparent;
+   width: 10rem;
+   height: 2rem;
+   color: var(--color-second);
+}
+.button_regular.button_disabled {
+   padding: 0;
+}
+.img {
+   position: absolute; 
+   top: 0;
+   left: 0;
+   width: 1rem;
+   height: 1rem;
+   margin: 0.5rem 0.75rem;
+}
+.img_small {
+   margin: 0.25rem 0.5rem;
+}
+.img_icon {
+   margin: 0.5rem;
+}
+.img_icon-small {
+   margin: 0.25rem;
+}
+.img_disabled {
+   margin: 0.5rem 0 0.5rem 1.125rem;
+}
