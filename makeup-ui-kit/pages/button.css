@@ -24,7 +24,7 @@ body, html {
    display: flex;
    margin: 3rem;
 }
-.button-wrapper_last {
+.button-wrapper:last-child {
    margin-top: 0;
 }
 .button-wrapper__main {
@@ -37,7 +37,7 @@ body, html {
    flex-direction: column;
    margin-right: 3rem;
 }
-.button-wrapper__disabled{
+.button-wrapper__disabled {
    display: flex;
    flex-direction: column;
 }
@@ -49,7 +49,6 @@ body, html {
    border-radius: 0.25rem;
    padding: 0.5rem 1rem 0.5rem 2.5rem;
    border:none;
-   font-size: 0.75rem;
    line-height: 1rem;
    color: var(--background-text);
    cursor: pointer;
@@ -57,21 +56,27 @@ body, html {
 .button-ui:hover {
    background-color: var(--background-border);
 }
-.button-ui__text {
+.button-ui_regular {
    width: 5.5rem;
    height: 2rem;
    background: var(--background-button);
    border-radius: 0.25rem;
    padding: 0.5rem 1rem;
    border:none;
-   font-size: 0.75rem;
    line-height: 1rem;
    color: var(--background-text);
    margin: 1rem 0;
    cursor: pointer;
 }
-.button-ui__text:hover {
-   background-color: var(--background-border);
+.button-ui__text {
+   font-size: 0.8125rem;
+}
+.button-ui__text_disabled {
+display: flex;   
+justify-content: start;
+}
+.button-ui__text_disabled.button-ui__text_regular {
+   padding-left: 1rem;
 }
 .button-ui__icon {
    position: relative;
@@ -91,17 +96,6 @@ body, html {
    background-color: transparent;
    color: var(--background-button);
 }
-.button-ui_secondary:hover {
-   color: var(--background-text);
-}
-.button-ui__text_secondary {
-   appearance: none;
-   background-color: transparent;
-   color: var(--background-button);
-}
-.button-ui__text_secondary:hover{
-   color: var(--background-text);
-}
 .button-ui__icon_secondary {
    appearance: none;
    background-color: transparent;
@@ -114,7 +108,7 @@ body, html {
    height: 1.5rem;
    padding: 0.25rem 0.5rem 0.25rem 1.5rem;
 }
-.button-ui__text_small {
+.button-ui_regular.button-ui_small {
    width: 4.5rem;
    height: 1.5rem;
    padding: 0.25rem 0.5rem;
@@ -123,50 +117,14 @@ body, html {
    width: 1.5rem;
    height: 1.5rem;
 }
-.button-ui_small-secondary {
-   appearance: none;
-   background-color: transparent;
-   color: var(--background-button);
-   width: 5.75rem;
-   height: 1.5rem;
-   padding: 0.25rem 0.5rem 0.25rem 1.5rem; 
-}
-.button-ui_small-secondary:hover {
-   color: var(--background-text);
-}
-.button-ui__text_small-secondary {
-   appearance: none;
-   background-color: transparent;
-   color: var(--background-button);
-   width: 5.75rem;
-   height: 1.5rem;
-   padding: 0.25rem 0.5rem;
-}
-.button-ui__text_small-secondary:hover {
-   color: var(--background-text);
-}
-.button-ui__icon_small-secondary {
-   appearance: none;
-   background-color: transparent;
-   color: var(--background-button);
-   padding: 0;
-   width: 1.5rem;
-   height: 1.5rem;  
-}
 .button-ui_disabled {
-   appearance: none;
    background-color: transparent;
    width: 10rem;
    height: 2rem;
    color: var(--color-second);
-   padding: 0.5rem 1rem 0.5rem 2.5rem; 
 }
-.button-ui__text_disabled {
-   appearance: none;
-   background-color: transparent;
-   width: 10rem;
-   height: 2rem;
-   color: var(--color-second);
+.button-ui_regular.button-ui_disabled {
+   padding: 0;
 }
 .img {
    position: absolute; 
